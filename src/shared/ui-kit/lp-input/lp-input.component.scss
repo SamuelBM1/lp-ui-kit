@@ -37,6 +37,12 @@
     .invalid {
         border: 1px solid #ef0c0c;
         color: #ef0c0c;
+        &:focus {
+            border: 2px solid #ef0c0c;
+        }
+        &:hover {
+            border: 1px solid #ef0c0c;
+        }
     }
     
     .error-msg {
