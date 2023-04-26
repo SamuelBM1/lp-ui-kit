@@ -1,0 +1,20 @@
+<div class="sidebar-container">
+	<div class="title-container pointer">
+		<lp-header [Header_Type]="'header-3'">Landing Pages</lp-header>
+		<lp-body-text [Color]="'#FF8033'" [Size]="'tiny'">UI Kit</lp-body-text>
+	</div>
+
+	<div class="urls-container">
+		<ng-container *ngFor="let component_url of ui_kit_components">
+			<a
+				class="url-components pointer"
+				[ngClass]="{ 'url-active': component_url.active }"
+				(click)="navigate(component_url.id, component_url.url)"
+			>
+				<div class="text">
+					<p>{{ component_url.label }}</p>
+				</div>
+			</a>
+		</ng-container>
+	</div>
+</div>

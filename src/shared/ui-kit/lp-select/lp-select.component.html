@@ -1,0 +1,27 @@
+<div class="input-container">
+	<label class="lp-input-label" [for]="Id" *ngIf="Label">{{ Label }}</label>
+	<select
+		[formControl]="FormControl"
+		[id]="Id"
+		(ngModelChange)="change($event)"
+		[ngClass]="{ invalid: Errors }"
+		[ngStyle]="{ height: Height, width: Width }"
+		class="lp-input-box color-black"
+		[disabled]="Disabled"
+        ngModel=""
+	>
+		<option value="" disabled class="color-black" selected>-- Select --</option>
+		<option
+			*ngFor="let option of Options"
+			[value]="option.value"
+			class="color-black"
+		>
+			{{ option.label }}
+		</option>
+	</select>
+	<div *ngIf="Errors && ErrorMsg" class="error-msg">
+		<p class="error-description">
+			{{ ErrorMsg }}
+		</p>
+	</div>
+</div>

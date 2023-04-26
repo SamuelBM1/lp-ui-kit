@@ -1,0 +1,35 @@
+<div class="input-container">
+    <label class="lp-input-label" [for]="Id" *ngIf="Label">{{ Label }}</label>
+    <input
+        *ngIf="FormControlName"
+        [type]="Type"
+        [formControl]="FormControl"
+        [name]="Name"
+        [id]="Id"
+        (ngModelChange)="change($event)"
+        [placeholder]="Placeholder"
+        [formControlName]="FormControlName"
+        [ngClass]="{ invalid: Errors }"
+        [ngStyle]="{ height: Height, width: Width }"
+        class="lp-input-box"
+        [readonly]="Disabled"
+    />
+    <input
+        *ngIf="!FormControlName"
+        [type]="Type"
+        [formControl]="FormControl"
+        [name]="Name"
+        [id]="Id"
+        (ngModelChange)="change($event)"
+        [placeholder]="Placeholder"
+        [ngClass]="{ invalid: Errors }"
+        [ngStyle]="{ height: Height, width: Width }"
+        class="lp-input-box"
+        [readonly]="Disabled"
+    />
+    <div *ngIf="Errors && ErrorMsg" class="error-msg">
+        <p class="error-description">
+            {{ ErrorMsg }}
+        </p>
+    </div>
+</div>

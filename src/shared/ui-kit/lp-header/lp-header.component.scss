@@ -1,0 +1,45 @@
+p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+@media (min-width: 768px) {
+  .header-format {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: -0.05em;
+  }
+
+  .header-2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 44px;
+    /* or 92% */
+
+    letter-spacing: -0.03em;
+  }
+
+  .header-3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+  }
+
+  .header-4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+  }
+}

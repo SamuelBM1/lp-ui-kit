@@ -1,0 +1,27 @@
+<lp-modal [Show_Modal]="Show_Modal">
+	<div class="container">
+		<form
+			class="modal-container"
+			(ngSubmit)="submit()"
+			[formGroup]="personalInfoForm"
+		>
+			<div class="header-modal-container">
+				<p>Update ZIP Code</p>
+				<lp-button Type="close" (Click)="closeModal()"></lp-button>
+			</div>
+			<div>
+				<div class="input">
+					<lp-input
+						[Type]="'number'"
+						Placeholder="New ZIP Code"
+						[FormControl]="$any(personalInfoForm.get('zip_code'))"
+						(Change)="changeZipCode($event)"
+					></lp-input>
+				</div>
+				<div class="button">
+					<lp-button [Disabled]="!button_enabled">Update ZIP Code</lp-button>
+				</div>
+			</div>
+		</form>
+	</div>
+</lp-modal>

@@ -1,0 +1,22 @@
+.header-container {
+	position: fixed;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	top: 0;
+	left: 295px;
+	right: 0;
+	height: 60px;
+	align-items: center;
+	z-index: 2;
+	box-shadow: 0 4px 10px 2px #0000000d;
+    display: flex;
+    justify-content: end;
+    padding-right: 32px;
+	.icon {
+		filter: brightness(0) saturate(100%) invert(42%) sepia(0%) saturate(1%)
+			hue-rotate(342deg) brightness(95%) contrast(88%);
+            margin-right: 8px;
+	}
+}

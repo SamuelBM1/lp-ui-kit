@@ -1,0 +1,213 @@
+// "basic" | "outlined" | "cta" | "cta-outlined" | "3D"
+
+.basic {
+	border-radius: 8px;
+	background: #2e4d6a;
+	border: 1px solid #2e4d6a;
+	color: #fff;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	line-height: 22px;
+	&:hover {
+		background: #1a548b;
+		box-shadow: 0px 4px 6px rgba(120, 121, 241, 0.5);
+	}
+	&:active {
+		background: #1a548b;
+		box-shadow: inset 2px 4px 10px rgba(0, 0, 0, 0.25);
+	}
+	&:disabled {
+		background: #cccccc;
+		box-shadow: none;
+		color: #666666;
+		border: 1px solid #cccccc;
+		img {
+			filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(1325%)
+				hue-rotate(195deg) brightness(96%) contrast(88%);
+		}
+	}
+	transition: box-shadow 300ms;
+}
+
+.outlined {
+	border: 1px solid #2e4d6a;
+	border-radius: 8px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	line-height: 22px;
+	color: #2e4d6a;
+    img {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(18%) saturate(1305%) hue-rotate(168deg) brightness(91%) contrast(90%);
+    }
+	&:hover {
+		border: 1px solid #1a548b;
+		box-shadow: 0px 4px 6px rgba(120, 121, 241, 0.6);
+	}
+	&:active {
+		border: 2px solid #1a548b;
+		box-shadow: none;
+	}
+	&:disabled {
+		border: 1px solid #cccccc;
+		color: #cccccc;
+		box-shadow: none;
+		img {
+			filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(1%)
+				hue-rotate(167deg) brightness(87%) contrast(88%);
+		}
+	}
+	transition: box-shadow 300ms;
+}
+
+.cta {
+	background: #ff6000;
+	border-radius: 8px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 16px;
+	color: #ffffff;
+	border: 1px solid #ff6000;
+	&:hover {
+		background: #ff8033;
+		box-shadow: 0px 4px 6px rgba(241, 120, 182, 0.3);
+		border: 1px solid #ff8033;
+	}
+	&:active {
+		background: #ff8033;
+		box-shadow: inset 2px 4px 10px rgba(0, 0, 0, 0.25);
+		border: 1px solid #ff8033;
+	}
+	&:disabled {
+		border: 1px solid #cccccc;
+		background: #cccccc;
+		color: #666666;
+		box-shadow: none;
+		img {
+			filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(1325%)
+				hue-rotate(195deg) brightness(96%) contrast(88%);
+		}
+	}
+	transition: all 300ms;
+}
+
+.cta-outlined {
+	border: 1px solid #ff6000;
+	border-radius: 8px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: -0.02em;
+	color: #ff6000;
+    img {
+        filter: brightness(0) saturate(100%) invert(49%) sepia(33%) saturate(7246%) hue-rotate(0deg) brightness(101%) contrast(106%);
+    }
+	&:hover {
+		border: 1px solid #ff8033;
+		color: #ff8033;
+		transition: all 300ms;
+	}
+	&:active {
+		border: 2px solid #ff8033;
+		transition: all 300ms;
+	}
+	&:disabled {
+		border: 1px solid #cccccc;
+		color: #cccccc;
+		img {
+			filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(1%)
+				hue-rotate(167deg) brightness(87%) contrast(88%);
+		}
+		transition: all 300ms;
+	}
+	transition: color 300ms;
+}
+
+.three-d {
+	background: linear-gradient(
+		180deg,
+		#e06d27 0%,
+		#ff8033 24.48%,
+		#ff6000 75.52%,
+		#ffaa77 100%
+	);
+	border-radius: 8px;
+	border: 1px solid #cccccc00;;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+	text-shadow: 0px 1px 3px rgba(34, 34, 34, 0.4);
+	&:hover {
+		background: linear-gradient(
+			180deg,
+			#ffa874 0%,
+			#ff995b 17.19%,
+			#ff6000 37.5%,
+			#ff6000 61.46%,
+			#ffa56f 81.77%,
+			#ffe4d3 100%
+		);
+		box-shadow: 0px 4px 16px #ff8033;
+	}
+	&:active {
+		background: linear-gradient(
+			180deg,
+			#ffa874 0%,
+			#ff995b 17.19%,
+			#ff6000 37.5%,
+			#ff6000 61.46%,
+			#ffa56f 81.77%,
+			#ffe4d3 100%
+		);
+		box-shadow: inset 2px 4px 10px rgba(34, 34, 34, 0.47);
+	}
+	&:disabled {
+		border: 1px solid #cccccc;
+		background: #cccccc;
+		color: #666666;
+		box-shadow: none;
+		text-shadow: none;
+		img {
+			filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(1325%)
+				hue-rotate(195deg) brightness(96%) contrast(88%);
+		}
+	}
+	transition: all 300ms;
+}
+
+.button-label-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		padding: 8px;
+	}
+}
+
+.x-button-container {
+	width: 46px;
+	height: 46px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:hover {
+		background-color: #CCCCCC;
+		border-radius: 50%;
+		transition: all 300ms;
+		cursor: pointer;
+	}
+	transition: all 300ms;
+}
+
+.button-body {
+	width: 100%;
+}

@@ -1,0 +1,264 @@
+<div class="page-content">
+    <div class="header-container">
+        <app-sub-header>Buttons</app-sub-header>
+    </div>
+
+    <div class="content-use">
+        <lp-header [Header_Type]="'header-4'">
+            How to use it
+        </lp-header>
+
+        <code-box>
+            <label class="open-close-code">&#60;lp-button&#62;</label> 
+            <label class="inner-text-code"> #Your text / #Your image / </label>
+            <label class="open-close-code">&#60;/lp-button&#62;</label> 
+        </code-box>
+
+        <lp-header [Header_Type]="'header-4'">
+            Styles
+        </lp-header>
+        <div class="buttons-styles-container">
+            <ng-container *ngFor="let button of buttons">
+                <div class="buttons-labels-container">
+                    <div class="text">
+                        <lp-body-text> <b>{{ button.label }}</b> ({{ button.type }})</lp-body-text>
+                    </div>
+                    <lp-button [Style]="button.type"> Button </lp-button>
+                </div>
+            </ng-container>
+        </div>
+
+        <div class="props-container">
+            <lp-header [Header_Type]="'header-4'">
+                Props:
+            </lp-header>
+            <!-- Type -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Type</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> "button" | "menu" | "reset" | "submit" | "close" </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> submit </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Type]="'submit'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Style -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Style</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> "basic" | "outlined" | "cta" | "cta-outlined" | "3D" </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> basic </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Style]="'basic'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Height -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Height</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> 46px </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Height]="'46px'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Width -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Width</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> 100% </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Width]="'100%'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Font_Size -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Font_Size</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> 16px </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Font_Size]="'16px'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Disabled -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Disabled</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> boolean </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> false </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Disabled]="false"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Icon -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Icon</b> <i> &nbsp; &nbsp;It should be an svg, recommended to export it in Figma</i> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Icon]="'image.svg'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Icon_Position -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Icon_Position</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> "left" | "right" </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "left" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Icon_Position]="'left'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Loading -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Loading</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> boolean </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> false </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Loading]="false"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,145 @@
+<div class="page-content">
+    <div class="header-container">
+        <app-sub-header>Icons</app-sub-header>
+    </div>
+
+    <div class="content-use">
+        <lp-header [Header_Type]="'header-4'">
+            How to use it
+        </lp-header>
+
+        <code-box>
+            <label class="open-close-code">&#60;lp-icon&#62;</label> 
+            <label class="open-close-code">&#60;/lp-icon&#62;</label> 
+        </code-box>
+
+        <lp-header [Header_Type]="'header-4'">
+            Styles
+        </lp-header>
+        <div class="buttons-styles-container">
+            <ng-container *ngFor="let button of icons">
+                <div class="buttons-labels-container">
+                    <lp-icon 
+                        [Icon]="button.type" 
+                        Width="32px"
+                        Height="32px"
+                    ></lp-icon>
+                    <div class="text">
+                        <lp-body-text> ({{ button.type }}) </lp-body-text>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+
+        <div class="props-container">
+            <lp-header [Header_Type]="'header-4'">
+                Props:
+            </lp-header>
+            <!-- Icon -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Icon</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> 
+                                "x" | "chevron-down" | "chevron-right" | "coins" | "delivery" | "delivery-2" 
+                                | "error-circled" |  "government-capitol" | "heart" | "image" | "invalid-email" 
+                                | "invalid-zip-code" | "like" | "lock" | "message-call" | "mobile" |  "monitor" 
+                                | "mouse" | "notepad" | "paper" | "person" | "shopping-cart" | "star" | "verify" 
+                                | "wifi"  | "error" | "success" | "warning" | "arrow-left" | "arrow-right" 
+                                | "bank-government" | "callout" | "check" |
+                            </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> x </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-icon <label class="props">[Icon]="'x'"</label> &#62;</label>
+                        <label class="open-close-code">&#60;/lp-icon&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Width -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Width</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> 26px </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-icon <label class="props">[Width]="'26px'"</label> &#62;</label> 
+                        <label class="open-close-code">&#60;/lp-icon&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Height -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Height</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> 26px </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-icon  <label class="props">[Height]="'26px'"</label> &#62;</label> 
+                        <label class="open-close-code">&#60;/lp-icon &#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Width -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Color</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> "white" | "gray" | "orange" | "light-gray"  </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> gray </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-icon <label class="props">[Color]="'gray'"</label> &#62;</label>
+                        <label class="open-close-code">&#60;/lp-icon&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

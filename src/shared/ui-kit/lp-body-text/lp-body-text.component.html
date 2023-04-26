@@ -1,0 +1,14 @@
+<p
+  class="body-text"
+  [ngClass]="{
+    normal: Size === 'normal',
+    small: Size === 'small',
+    tiny: Size === 'tiny'
+  }"
+  [ngStyle]="{
+    color: Color,
+    'text-align': Text_Align
+  }"
+>
+  <ng-content></ng-content>
+</p>

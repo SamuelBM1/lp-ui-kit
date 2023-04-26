@@ -1,0 +1,377 @@
+<div class="page-content">
+    <div class="header-container">
+        <app-sub-header>Inputs</app-sub-header>
+    </div>
+
+    <div class="content-use">
+        <lp-header [Header_Type]="'header-4'">
+            How to use it
+        </lp-header>
+
+        <code-box>
+            <label class="open-close-code">&#60;lp-input&#62;</label>
+            <label class="open-close-code">&#60;/lp-input&#62;</label> 
+        </code-box>
+
+        <lp-header [Header_Type]="'header-4'">
+            Styles
+        </lp-header>
+        <div class="buttons-styles-container">
+                <div class="buttons-labels-container">
+                    <div class="text">
+                        <lp-body-text> <b>Input</b> </lp-body-text>
+                    </div>
+                    <lp-input Placeholder="Input"></lp-input>
+                </div>
+
+                <div class="buttons-labels-container">
+                    <div class="text">
+                        <lp-body-text> <b>Input Disabled</b> </lp-body-text>
+                    </div>
+                    <lp-input [Disabled]="true" Placeholder="Input Disabled"></lp-input>
+                </div>
+
+                <div class="buttons-labels-container">
+                    <div class="text">
+                        <lp-body-text> <b>Input Errors</b> </lp-body-text>
+                    </div>
+                    <lp-input [Errors]="true" Placeholder="Error"></lp-input>
+                </div>
+
+                <div class="buttons-labels-container">
+                    <div class="text">
+                        <lp-body-text> <b>Input Errors</b> </lp-body-text>
+                    </div>
+                    <lp-input [Errors]="true" ErrorMsg="Error message" Placeholder="Input Error Message"></lp-input>
+                </div>
+        </div>
+
+        <div class="props-container">
+            <lp-header [Header_Type]="'header-4'">
+                Props:
+            </lp-header>
+            <!-- Type -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Type</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> "text" | "number" | "date" </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> text </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Type]="'text'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Label -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Label</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Label]="'label'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Name -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Name</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Name]="'name'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Id -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Id</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Id]="'id'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Placeholder -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Placeholder</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Placeholder]="'placeholder'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Disabled -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Disabled</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> boolean </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> false </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Disabled]="false"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- FormControl -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>FormControl</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> FormControl </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[FormControl]="$any(< group >.get( < fieldname > ))"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- FormControlName -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>FormControlName</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[FormControlName]="'your formcontrolname'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Errors -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Errors</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> boolean </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> false </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Errors]="false"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- ErrorMsg -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>ErrorMsg</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[ErrorMsg]="'your ErrorMsg'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Width -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Width</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "100%" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Width]="'100%'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Height -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Height</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string </lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> "42px" </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">[Height]="'42px'"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Change -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Change</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> Event Emitter </lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-input <label class="props">(Change)="yourFunction($event)"</label> &#62;</label> 
+                        
+                        <label class="open-close-code">&#60;/lp-input&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

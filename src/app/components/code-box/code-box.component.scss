@@ -1,0 +1,16 @@
+.code-box {
+    background-color: #565f89;
+    color: rgb(126, 252, 126);
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    border-radius: 4px;
+    font-family: 'Source Code Pro';
+    margin: 16px 0px;
+    .code-container {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}

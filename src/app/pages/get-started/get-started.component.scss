@@ -1,0 +1,24 @@
+.page-content {
+    margin-bottom: 10rem;
+    .header-container {
+        .description {
+            margin-top: 16px;  
+        }
+        margin-left: 5%;
+        width: 60%;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #2E4D6A;
+    }
+    .content-use {
+        margin-left: 5%;
+        width: 60%;
+        margin-top: 32px;
+        .description {
+            margin-top: 16px;
+        }
+    }
+    .github-button {
+        color: #1A548B;
+        font-weight: bold;
+    }
+}

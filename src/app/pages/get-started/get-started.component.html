@@ -1,0 +1,54 @@
+<div class="page-content">
+    <div class="header-container">
+        <app-sub-header>Get Started</app-sub-header>
+        <div class="description">
+            <lp-body-text
+                >This UI Kit is designed for the Landing Pages that will be made from now
+                on. Here you can find a variety of components that will allow you to speed
+                up the process of making them.
+            </lp-body-text>
+        </div>
+    </div>
+
+    <div class="content-use">
+        <lp-header [Header_Type]="'header-4'">
+            How to use it
+        </lp-header>
+        <div class="description">
+            <lp-body-text [Text_Align]="'justify'">
+                To use it, you must download the folder of the <label class="pointer github-button" (click)="openGithub()">Github</label>. 
+                Then paste it on your project, at the src folder <b><i>(at the same label of assets)</i></b> . Go to <b>"app.module.ts"</b> 
+                and import it.
+            </lp-body-text>
+            <code-box>
+                {{ "import { UiKitModule } from 'src/shared/ui-kit.module'; " }}
+            </code-box>
+            <lp-body-text [Text_Align]="'justify'">
+                Then add it to <b> imports </b> on NgModule
+            </lp-body-text>
+            <code-box>
+                @NgModule (&#123; <br>
+                &nbsp; &nbsp; declarations: [], <br>
+                &nbsp; &nbsp; imports: [ <br> 
+                -->&nbsp; &nbsp; &nbsp; UiKitModule<br>
+                &nbsp; &nbsp; &nbsp;], <br>             
+                &#125;)
+            </code-box>
+
+            <lp-body-text [Text_Align]="'justify'">
+                Finally, go to <b><i>angular.json</i></b>, and paste <i>"src/shared/ui-kit/icons"</i> on <b>assets</b> (there are 2)
+            </lp-body-text>
+            <code-box>
+                <label class="blue-letter">"assets": [ <br></label>
+                   &nbsp; &nbsp;"src/favicon.ico", <br>
+                   &nbsp; &nbsp;"src/assets", <br>
+                -->&nbsp;"src/shared/ui-kit/icons"<br>
+                 <label class="blue-letter"> ] </label> 
+            </code-box>
+
+            <lp-body-text [Text_Align]="'justify'">
+                <b>Now it's ready to use!</b> 
+            </lp-body-text>
+        </div>
+    </div>
+</div>

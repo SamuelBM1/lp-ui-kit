@@ -1,0 +1,80 @@
+<div class="page-content">
+    <div class="header-container">
+        <app-sub-header>Loader</app-sub-header>
+    </div>
+
+    <div class="content-use">
+        <lp-header [Header_Type]="'header-4'">
+            How to use it
+        </lp-header>
+
+        <code-box>
+            <label class="open-close-code">&#60;lp-loader&#62;</label> 
+            <label class="open-close-code">&#60;/lp-loader&#62;</label> 
+        </code-box>
+
+        <lp-header [Header_Type]="'header-4'">
+            Style
+        </lp-header>
+        <div class="buttons-styles-container">
+            <lp-loader Color="#696969" Size="150px"></lp-loader>
+        </div>
+
+        <div class="props-container">
+            <lp-header [Header_Type]="'header-4'">
+                Props:
+            </lp-header>
+            <!-- Size -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Size</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> 25px </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Size]="'25px'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+            <!-- Color -->
+            <div class="buttons-props-container">
+                <div class="text">
+                    <lp-body-text> <b>Color</b> </lp-body-text>
+                </div>
+                <div class="types-container">
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> string</lp-body-text>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <div class="type-options">
+                            <lp-body-text> <b>Default to:</b> <i> #fff </i></lp-body-text>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-box-container">
+                    <code-box>
+                        <label class="open-close-code">&#60;lp-button <label class="props">[Color]="'#fff'"</label> &#62;</label> 
+                        <label class="inner-text-code"> #Your text / #Your image / </label>
+                        <label class="open-close-code">&#60;/lp-button&#62;</label> 
+                    </code-box>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

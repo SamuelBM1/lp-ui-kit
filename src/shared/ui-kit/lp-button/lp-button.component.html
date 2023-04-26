@@ -1,0 +1,50 @@
+<div class="button-body">
+	<!-- BUTTONS DIFFERENT TO CLOSE -->
+	<ng-container *ngIf="Type != 'close'">
+		<button
+			[type]="Type"
+			[ngClass]="{
+				basic: Style == 'basic',
+				outlined: Style == 'outlined',
+				cta: Style == 'cta',
+				'three-d': Style == '3D',
+				'cta-outlined': Style == 'cta-outlined'
+			}"
+			[ngStyle]="{
+				width: Width,
+				'height': Height,
+				'min-width': Height,
+				'font-size': Font_Size
+			}"
+			[disabled]="Disabled || Loading"
+			(click)="click()"
+		>
+			<div class="button-label-container">
+				<ng-container *ngIf="!Loading">
+					<img [src]="Icon" *ngIf="Icon && Icon_Position == 'left'" />
+					<ng-content></ng-content>
+					<img [src]="Icon" *ngIf="Icon && Icon_Position == 'right'" />
+				</ng-container>
+
+				<ng-container *ngIf="Loading">
+					<lp-loader></lp-loader>
+				</ng-container>
+			</div>
+		</button>
+	</ng-container>
+
+	<!-- CLOSE BUTTON -->
+	<ng-container *ngIf="Type === 'close'">
+		<a
+			class="x-button-container"
+			(click)="click()"
+			[ngStyle]="{
+				width: Width,
+				height: Height,
+				'min-width': Height
+			}"
+		>
+			<img src="shared/ui-kit/icons/close.svg" class="x-icon" />
+		</a>
+	</ng-container>
+</div>
